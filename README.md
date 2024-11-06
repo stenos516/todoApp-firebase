@@ -31,5 +31,6 @@ Getting Started
 Clone the repository, install the necessary dependencies, and set up Firebase with your own configuration to get started with this project.
 ![Screenshot 2024-11-06 at 17-42-41 React App](https://github.com/user-attachments/assets/00b3d0cc-33b7-4870-baa0-c3ab858bb412)
 
-![Screenshot 2024-11-06 at 17-42-41 React App](https://github.com/user-attachments/assets/b9c59fb4-b209-41c8-8954-e60f45d49aae)
+
+![Screenshot 2024-11-06 at 17-43-17 React App](https://github.com/user-attachments/assets/b893f145-a740-423b-acd1-e00619383342)
 
