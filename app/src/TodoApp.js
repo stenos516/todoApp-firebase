@@ -16,7 +16,7 @@ function TodoApp() {
 
   
   useEffect(() => {
-    // Verifica lo stato di autenticazione all'avvio
+  
     const unsubscribeAuth = auth.onAuthStateChanged((currentUser) => {
       setUser(currentUser);
       setLoading(false);
@@ -26,10 +26,10 @@ function TodoApp() {
 
   useEffect(() => {
     if (user) {
-      // Filtra i todo in base all'utente attualmente autenticato
+    
       const q = query(
         collection(db, "todos"),
-        where("userId", "==", user.uid) // Filtro per userId dell'utente autenticato
+        where("userId", "==", user.uid) 
       );
       const unsub = onSnapshot(q, (querySnapshot) => {
         let todosArray = [];
