@@ -1,19 +1,19 @@
 import React, { useState } from "react";
 import { addDoc, collection } from "firebase/firestore";
-import { db, auth } from "../firebase";// Assicurati di importare `auth` e `db`
+import { db, auth } from "../firebase";
 
 function AddTodo() {
   const [title, setTitle] = useState("");
 
   const addTodo = async () => {
-    if (!auth.currentUser) return; // Verifica che l'utente sia autenticato
+    if (!auth.currentUser) return; 
     const newTodo = {
       title: title,
       completed: false,
-      userId: auth.currentUser.uid, // Aggiungi l'ID dell'utente
+      userId: auth.currentUser.uid, 
     };
     await addDoc(collection(db, "todos"), newTodo);
-    setTitle(""); // Resetta il campo di input dopo l'aggiunta
+    setTitle(""); 
   };
 
   const handleSubmit = (e) => {
